@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Deja el logo/título a la izquierda y el menú a la derecha */
+    align-items: center;
+}
+
+/* Quita viñetas y alinea la lista a la derecha */
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de los enlaces del menú */
+header a {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    text-transform: uppercase;
+    color: #000; /* O el color que prefieras */
+}
+
