@@ -15,7 +15,6 @@ header {
     align-items: center;
 }
 
-/* Quita viñetas y alinea la lista a la derecha */
 header ul {
     display: flex;
     justify-content: flex-end;
@@ -25,7 +24,6 @@ header ul {
     padding: 0;
 }
 
-/* Estilos de los enlaces del menú */
 header a {
     font-size: 14px;
     font-weight: bold;
@@ -33,5 +31,10 @@ header a {
     text-decoration: none; /* Quita el subrayado del enlace */
     text-transform: uppercase;
     color: #000; /* O el color que prefieras */
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
 }
 
