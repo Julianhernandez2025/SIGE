@@ -78,3 +78,14 @@ input[type="submit"] {
     box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
     background-color: #27ee0c; /* Color de fondo del input */
 }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #27ee0c; /* Color de fondo del botón */
+    color: #0a0909; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
