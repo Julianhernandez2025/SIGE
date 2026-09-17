@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+      <script src="script.js"></script>
+          <title>SIGE</title>
+        <body>
+</head>
+<div class="container">
+<header>
+    <a href="index.html"><h1>SIGE</h1></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
+            <li><a href="contacto.html">CONTACTANOS</a></li>
+            <li><button class="btn" onclick="window.location.href='login.html'">Iniciar sesión</button></li>
+        </ul>
+    </nav>
+</header>
+ <form action="login.php" method="post">
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Iniciar sesión</button>
+</form>
+
+
+     <div class="pie de pagina">
+           <footer>
+           <p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

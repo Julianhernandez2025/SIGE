@@ -7,12 +7,15 @@ body {
 }
 
 header {
-    background-color: #f2f2f2;
+    background-color: #b7b8d4;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between; /* Deja el logo/título a la izquierda y el menú a la derecha */
     align-items: center;
+    animation: fadeIn 1s ease-in-out; /* Agrega una animación de desvanecimiento */
+    color: #e01212; /* Color del texto del encabezado */
+    
 }
 
 header ul {
@@ -35,6 +38,30 @@ header a {
 h2 {
     font-size: 18px;
     margin-bottom: 10px;
-    
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+ footer {
+    background-color: #b7b8d4;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #e01212; /* Color del texto del pie de página */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: flex;
+    justify-content: center;
+
 }
 
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    text-align: center; /* Centra el contenido del formulario */
+}
