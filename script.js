@@ -51,3 +51,4 @@ function mostrarPosts() {
             <button type="submit">Login</button>
         `;
         loginContainer.appendChild(loginForm);
+    }
