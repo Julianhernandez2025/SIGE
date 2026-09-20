@@ -52,3 +52,26 @@ function mostrarPosts() {
         `;
         loginContainer.appendChild(loginForm);
     }
+
+    function cerrarSesion() {
+        // Aquí puedes agregar la lógica para cerrar sesión, como limpiar datos de usuario, redirigir a la página de inicio, etc.
+        alert('Sesión cerrada. Redirigiendo a la página de inicio.');
+        window.location.href = 'index.html'; // Redirigir a la página de inicio
+    }
+
+    function redirigirPagina(pagina) {
+        window.location.href = pagina;
+    }
+    function enviarFormulario(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe de forma predeterminada
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        alert('Formulario enviado. Username: ' + document.getElementById('username').value + ', Password: ' + document.getElementById('password').value);
+    // Aquí puedes agregar la lógica para enviar los datos del formulario al servidor o realizar otras acciones necesarias.
+}
+  }
+   function enviar(event) {
+        event.preventDefault();
+    alert('Formulario enviado. Username: ' + document.getElementById('username').value + ', Password: ' + document.getElementById('password').value);
+    // Aquí puedes agregar la lógica para enviar los datos del formulario al servidor o realizar otras acciones necesarias.
+}
