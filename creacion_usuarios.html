@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="brand"><h1>SIGE</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="areapersonal.html">INICIO</a></li>
+                    <li><a href="contratos.html">CONTRATOS</a></li>
+                    <li><a href="ventasymarketing.html">VENTAS Y MARKETING</a></li>
+                    <li><a href="recursoshumanos.html">RECURSOS HUMANOS</a></li>
+                    <li><a href="tic.html">TIC</a></li>
+                    <li><button class="btn" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <h1>Creación de usuarios</h1>
+            <p>Registra nuevos usuarios del sistema y asigna su perfil según la operación de la empresa.</p>
+        </section>
+
+        <form class="registro-form" id="usuario-form">
+            <div class="registro-grid">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Gómez" required>
+                </div>
+
+                <div>
+                    <label for="rol">Rol:</label>
+                    <select id="rol" name="rol" required>
+                        <option value="">Seleccione</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Compras">Compras</option>
+                        <option value="Recursos Humanos">Recursos Humanos</option>
+                        <option value="TIC">TIC</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tipo_documento">Tipo de documento:</label>
+                    <select id="tipo_documento" name="tipo_documento" required>
+                        <option value="">Seleccione</option>
+                        <option value="CC">Cédula de ciudadanía</option>
+                        <option value="CE">Cédula de extranjería</option>
+                        <option value="NIT">NIT</option>
+                        <option value="PASAPORTE">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="documento">Número de documento:</label>
+                    <input type="text" id="documento" name="documento" placeholder="Ej: 1234567890" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="full">
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ej: anagomez" required>
+                </div>
+
+                <div class="full">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres" required>
+                </div>
+            </div>
+
+            <button type="submit">Guardar usuario</button>
+        </form>
+
+        <section class="usuarios-section">
+            <h2>Usuarios creados</h2>
+            <div id="usuarios-lista" class="usuarios-lista"></div>
+        </section>
+    </main>
+
+  
+</body>
+</html>

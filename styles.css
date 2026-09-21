@@ -249,6 +249,254 @@ footer {
     font-weight: bold;
 }
 
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-form {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 28px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.registro-form .registro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 18px 22px;
+}
+
+.registro-form .registro-grid .full {
+    grid-column: 1 / -1;
+}
+
+.registro-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #222;
+}
+
+.registro-form input,
+.registro-form select,
+.registro-form button {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #cfd7df;
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+.registro-form input,
+.registro-form select {
+    background: #fff;
+    color: #111;
+}
+
+.registro-form button {
+    max-width: 240px;
+    display: block;
+    margin: 24px auto 0;
+    background: #27ee0c;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .registro-form .registro-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1d1d1d;
+}
+
+header {
+    background-color: #b7b8d4;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #27ee0c;
+    color: #0a0909;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px 40px;
+}
+
+.intro-section {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.intro-section h1 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+}
+
+.intro-section p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.registro-form {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.registro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 18px 22px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #222;
+}
+
+input, select, button {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+input, select {
+    border: 1px solid #cfd7df;
+    background: #fff;
+    color: #111;
+}
+
+.registro-form button {
+    max-width: 240px;
+    display: block;
+    margin: 24px auto 0;
+    background: #27ee0c;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.usuarios-section {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.usuarios-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.usuarios-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.usuario-card {
+    background: #f8fafb;
+    border: 1px solid #dfe3e8;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.usuario-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.usuario-card p {
+    margin: 0 0 6px;
+    line-height: 1.6;
+}
+
+.empty-state {
+    background: #f3f4f6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+}
+
 form {
     max-width: 400px;
     margin: 40px auto 20px;
@@ -284,6 +532,49 @@ input[type="submit"] {
 form button[type="submit"] {
     display: block;
     margin: 10px auto 0;
+}
+
+.register-text {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.register-text a {
+    color: #1b4d9b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .registro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.register-text a {
+    color: #1b4d9b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
 }
 @media (max-width: 768px) {
     header {
