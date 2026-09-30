@@ -16,13 +16,13 @@
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
                     <li><a href="contacto.html">CONTACTANOS</a></li>
-                    <li><button class="btn" onclick="window.location.href='areapersonal.html'">Iniciar sesión</button></li>
+                    <li><button class="btn" type="button" onclick="document.getElementById('username').focus()">Iniciar sesión</button></li>
                 </ul>
             </nav>
         </header>
 
         <div class="login-wrap">
-            <form class="login-form" onsubmit="window.location.href='areapersonal.html'; return false;">
+            <form class="login-form" id="login-form">
                 <h2>Iniciar sesión</h2>
 
                 <label for="username">Nombre de usuario:</label>

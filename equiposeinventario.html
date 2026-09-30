@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGE | Equipos e inventario</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="areapersonal.html" class="brand"><h1>SIGE</h1></a>
+			<nav><ul><li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li></ul></nav>
+		</header>
+		<main class="main-content personal-layout">
+			<aside class="quick-links-panel">
+				<h2 class="quick-links-title">Opciones de TIC</h2>
+				<nav class="quick-links" aria-label="Opciones de TIC">
+					<a href="areapersonal.html" class="quick-link">ÁREA PERSONAL</a>
+					<a href="tic.html" class="quick-link">VOLVER A TIC</a>
+					<a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+					<a href="Soportetecnico.html" class="quick-link">SOPORTE TÉCNICO</a>
+					<a href="equiposeinventario.html" class="quick-link" aria-current="page">EQUIPOS E INVENTARIO</a>
+					<a href="redeseinfraestructura.html" class="quick-link">REDES E INFRAESTRUCTURA</a>
+					<a href="softwareeaplicaciones.html" class="quick-link">SOFTWARE Y APLICACIONES</a>
+					<a href="seguridadinformatica.html" class="quick-link">SEGURIDAD INFORMÁTICA</a>
+				</nav>
+			</aside>
+			<div class="personal-main">
+				<section class="intro-section tic-detail-intro">
+					<h1>Equipos e inventario</h1>
+				</section>
+
+				<section class="tic-management-section" aria-labelledby="inventory-management-title">
+					<div class="tic-management-heading">
+						<div>
+							<h2 id="inventory-management-title">Inventario de equipos</h2>
+						</div>
+					</div>
+					<form class="tic-manage-form" data-tic-record-form data-tic-module="inventario" data-tic-title-field="nombre">
+						<div class="tic-manage-grid">
+							<div class="tic-manage-field"><label for="asset-name">Nombre del equipo</label><input id="asset-name" name="nombre" data-record-field data-record-label="Equipo" required></div>
+							<div class="tic-manage-field"><label for="asset-code">Código interno</label><input id="asset-code" name="codigo" data-record-field data-record-label="Código" required></div>
+							<div class="tic-manage-field"><label for="asset-category">Categoría</label><select id="asset-category" name="categoria" data-record-field data-record-label="Categoría" required><option value="">Selecciona</option><option>Computador</option><option>Impresora</option><option>Redes</option><option>Periférico</option><option>Otro</option></select></div>
+							<div class="tic-manage-field"><label for="asset-model">Marca y modelo</label><input id="asset-model" name="modelo" data-record-field data-record-label="Marca y modelo"></div>
+							<div class="tic-manage-field"><label for="asset-serial">Número de serie</label><input id="asset-serial" name="serial" data-record-field data-record-label="Número de serie"></div>
+							<div class="tic-manage-field"><label for="asset-location">Ubicación</label><input id="asset-location" name="ubicacion" data-record-field data-record-label="Ubicación" required></div>
+							<div class="tic-manage-field"><label for="asset-owner">Responsable</label><input id="asset-owner" name="responsable" data-record-field data-record-label="Responsable"></div>
+							<div class="tic-manage-field"><label for="asset-area">Área asignada</label><input id="asset-area" name="area" data-record-field data-record-label="Área"></div>
+							<div class="tic-manage-field"><label for="asset-vendor">Proveedor</label><input id="asset-vendor" name="proveedor" data-record-field data-record-label="Proveedor"></div>
+							<div class="tic-manage-field"><label for="asset-date">Fecha de adquisición</label><input id="asset-date" name="fechaAdquisicion" data-record-field data-record-label="Adquisición" type="date"></div>
+							<div class="tic-manage-field"><label for="asset-cost">Costo</label><input id="asset-cost" name="costo" data-record-field data-record-label="Costo" type="number" min="0" step="0.01"></div>
+							<div class="tic-manage-field"><label for="asset-warranty">Garantía hasta</label><input id="asset-warranty" name="garantia" data-record-field data-record-label="Garantía" type="date"></div>
+							<div class="tic-manage-field"><label for="asset-status">Estado</label><select id="asset-status" name="estado" data-record-field data-record-label="Estado" required><option>Disponible</option><option>Asignado</option><option>En mantenimiento</option><option>Retirado</option></select></div>
+							<div class="tic-manage-field"><label for="asset-maintenance">Próximo mantenimiento</label><input id="asset-maintenance" name="proximoMantenimiento" data-record-field data-record-label="Próximo mantenimiento" type="date"></div>
+							<div class="tic-manage-field tic-manage-field-full"><label for="asset-accessories">Accesorios entregados</label><input id="asset-accessories" name="accesorios" data-record-field data-record-label="Accesorios"></div>
+							<div class="tic-manage-field tic-manage-field-full"><label for="asset-notes">Observaciones e historial</label><textarea id="asset-notes" name="observaciones" data-record-field data-record-label="Observaciones" rows="3"></textarea></div>
+						</div>
+						<div class="tic-manage-actions"><button class="btn" type="submit" data-tic-save>Guardar equipo</button><button class="tic-secondary-button" type="button" data-tic-cancel hidden>Cancelar edición</button></div>
+					</form>
+					<div class="tic-records-heading">
+						<h3>Equipos registrados</h3>
+						<div class="tic-record-filters"><input type="search" data-tic-search placeholder="Buscar equipo" aria-label="Buscar equipo"><select data-tic-filter aria-label="Filtrar equipos por estado"><option value="">Todos los estados</option><option>Disponible</option><option>Asignado</option><option>En mantenimiento</option><option>Retirado</option></select></div>
+					</div>
+					<div class="tic-record-list" data-tic-record-list aria-live="polite"></div>
+				</section>
+			</div>
+		</main>
+		<footer><p>&copy; 2026 SIGE. Todos los derechos reservados.</p></footer>
+	</div>
+</body>
+</html>

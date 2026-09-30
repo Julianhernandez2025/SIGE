@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGE | Seguridad informática</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="areapersonal.html" class="brand"><h1>SIGE</h1></a>
+			<nav><ul><li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li></ul></nav>
+		</header>
+		<main class="main-content personal-layout">
+			<aside class="quick-links-panel">
+				<h2 class="quick-links-title">Opciones de TIC</h2>
+				<nav class="quick-links" aria-label="Opciones de TIC">
+					<a href="areapersonal.html" class="quick-link">ÁREA PERSONAL</a>
+					<a href="tic.html" class="quick-link">VOLVER A TIC</a>
+					<a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+					<a href="Soportetecnico.html" class="quick-link">SOPORTE TÉCNICO</a>
+					<a href="equiposeinventario.html" class="quick-link">EQUIPOS E INVENTARIO</a>
+					<a href="redeseinfraestructura.html" class="quick-link">REDES E INFRAESTRUCTURA</a>
+					<a href="softwareeaplicaciones.html" class="quick-link">SOFTWARE Y APLICACIONES</a>
+					<a href="seguridadinformatica.html" class="quick-link" aria-current="page">SEGURIDAD INFORMÁTICA</a>
+				</nav>
+			</aside>
+			<div class="personal-main">
+				<section class="intro-section tic-detail-intro">
+					<h1>Seguridad informática</h1>
+				</section>
+
+				<section class="tic-management-section" aria-labelledby="security-management-title">
+					<div class="tic-management-heading">
+						<div><h2 id="security-management-title">Gestión de seguridad</h2></div>
+					</div>
+					<form class="tic-manage-form" data-tic-record-form data-tic-module="seguridad" data-tic-title-field="titulo">
+						<div class="tic-manage-grid">
+							<div class="tic-manage-field"><label for="security-title">Asunto del incidente</label><input id="security-title" name="titulo" data-record-field data-record-label="Asunto" required></div>
+							<div class="tic-manage-field"><label for="security-reporter">Reportado por</label><input id="security-reporter" name="reportante" data-record-field data-record-label="Reportado por" required></div>
+							<div class="tic-manage-field"><label for="security-category">Registro</label><select id="security-category" name="categoria" data-record-field data-record-label="Registro" required><option value="">Selecciona</option><option>Riesgo</option><option>Revisión de accesos</option><option>Prueba de respaldo</option><option>Incidente de seguridad</option></select></div>
+							<div class="tic-manage-field"><label for="security-severity">Severidad</label><select id="security-severity" name="severidad" data-record-field data-record-label="Severidad" required><option value="">Selecciona</option><option>Baja</option><option>Media</option><option>Alta</option><option>Crítica</option></select></div>
+							<div class="tic-manage-field"><label for="security-likelihood">Probabilidad</label><select id="security-likelihood" name="probabilidad" data-record-field data-record-label="Probabilidad"><option value="">Selecciona</option><option>Baja</option><option>Media</option><option>Alta</option></select></div>
+							<div class="tic-manage-field"><label for="security-impact">Impacto</label><select id="security-impact" name="impacto" data-record-field data-record-label="Impacto"><option value="">Selecciona</option><option>Bajo</option><option>Medio</option><option>Alto</option></select></div>
+							<div class="tic-manage-field"><label for="security-asset">Sistema o activo afectado</label><input id="security-asset" name="activo" data-record-field data-record-label="Activo afectado"></div>
+							<div class="tic-manage-field"><label for="security-owner">Responsable</label><input id="security-owner" name="responsable" data-record-field data-record-label="Responsable"></div>
+							<div class="tic-manage-field"><label for="security-date">Fecha del evento</label><input id="security-date" name="fecha" data-record-field data-record-label="Fecha" type="date" required></div>
+							<div class="tic-manage-field"><label for="security-status">Estado</label><select id="security-status" name="estado" data-record-field data-record-label="Estado" required><option>Pendiente</option><option>En análisis</option><option>En mitigación</option><option>Verificado</option><option>Cerrado</option></select></div>
+							<div class="tic-manage-field tic-manage-field-full"><label for="security-response">Evaluación, resultado y acciones</label><textarea id="security-response" name="respuesta" data-record-field data-record-label="Evaluación y acciones" rows="4" required></textarea></div>
+						</div>
+						<div class="tic-manage-actions"><button class="btn" type="submit" data-tic-save>Guardar incidente</button><button class="tic-secondary-button" type="button" data-tic-cancel hidden>Cancelar edición</button></div>
+					</form>
+					<div class="tic-records-heading">
+						<h3>Incidentes registrados</h3>
+						<div class="tic-record-filters"><input type="search" data-tic-search placeholder="Buscar incidente" aria-label="Buscar incidente"><select data-tic-filter aria-label="Filtrar incidentes por estado"><option value="">Todos los estados</option><option>Reportado</option><option>En análisis</option><option>Contenido</option><option>Cerrado</option></select></div>
+					</div>
+					<div class="tic-record-list" data-tic-record-list aria-live="polite"></div>
+				</section>
+			</div>
+		</main>
+		<footer><p>&copy; 2026 SIGE. Todos los derechos reservados.</p></footer>
+	</div>
+</body>
+</html>

@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIC</title>
+    <title>SIGE | TIC</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="brand"><h1>SIGE</h1></a>
+            <a href="areapersonal.html" class="brand"><h1>SIGE</h1></a>
             <nav>
                 <ul>
-                    <li><a href="areapersonal.html">INICIO</a></li>
-                    <li><a href="contratos.html">CONTRATOS</a></li>
-                    <li><a href="ventasymarketing.html">VENTAS Y MARKETING</a></li>
-                    <li><a href="recursoshumanos.html">RECURSOS HUMANOS</a></li>
-                    <li><a href="tic.html">TIC</a></li>
-                    <li><button class="btn" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
+                    <li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
                 </ul>
             </nav>
         </header>
-<section class="intro-section"><div class="cta">
-        </div>
-        <main class="main-content">
-            <section class="intro-section">
-                <h1>TIC</h1>
-                <p>Bienvenido a la sección de tecnologías e infraestructura de la plataforma SIGE. Aquí podrás consultar y gestionar los procesos relacionados con TIC.</p>
-            </section>
+
+        <main class="main-content personal-layout">
+            <aside class="quick-links-panel">
+                <h2 class="quick-links-title">Opciones de TIC</h2>
+                <nav class="quick-links" aria-label="Opciones de TIC">
+                    <a href="areapersonal.html" class="quick-link">ÁREA PERSONAL</a>
+                    <a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+                    <a href="Soportetecnico.html" class="quick-link">SOPORTE TÉCNICO</a>
+                    <a href="equiposeinventario.html" class="quick-link">EQUIPOS E INVENTARIO</a>
+                    <a href="redeseinfraestructura.html" class="quick-link">REDES E INFRAESTRUCTURA</a>
+                    <a href="softwareeaplicaciones.html" class="quick-link">SOFTWARE Y APLICACIONES</a>
+                    <a href="seguridadinformatica.html" class="quick-link">SEGURIDAD INFORMÁTICA</a>
+                    
+                </nav>
+            </aside>
+            <div class="personal-main">
+                <section class="intro-section tic-intro">
+                    <h1>TIC</h1>
+                </section>
+
+                <section class="tic-options-grid" aria-label="Opciones del área TIC">
+                    <a class="tic-option tic-option-link" href="Soportetecnico.html">
+                        <h2>Soporte técnico</h2>
+                            <span class="tic-option-action">Gestionar módulo</span>
+                    </a>
+                    <a class="tic-option tic-option-link" href="equiposeinventario.html">
+                        <h2>Equipos e inventario</h2>
+                            <span class="tic-option-action">Gestionar módulo</span>
+                    </a>
+                    <a class="tic-option tic-option-link" href="redeseinfraestructura.html">
+                        <h2>Redes e infraestructura</h2>
+                            <span class="tic-option-action">Gestionar módulo</span>
+                    </a>
+                    <a class="tic-option tic-option-link" href="softwareeaplicaciones.html">
+                        <h2>Software y aplicaciones</h2>
+                            <span class="tic-option-action">Gestionar módulo</span>
+                    </a>
+                    <a class="tic-option tic-option-link" href="seguridadinformatica.html">
+                        <h2>Seguridad informática</h2>
+                            <span class="tic-option-action">Gestionar módulo</span>
+                    </a>
+                </section>
+            </div>
         </main>
-        <li><a href="creacion_usuarios.html"><button>CREACION DE USUARIOS</button></a></li>
         <footer>
             <p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
         </footer>
-    </div>
+</div>
 </body>
 </html>

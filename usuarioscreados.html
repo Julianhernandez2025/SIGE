@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGE | Usuarios creados</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="tic.html" class="brand"><h1>SIGE</h1></a>
+			<nav>
+				<ul>
+					<li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-content personal-layout">
+			<aside class="quick-links-panel">
+				<h2 class="quick-links-title">Menú TIC</h2>
+				<nav class="quick-links" aria-label="Opciones de TIC">
+					<a href="tic.html" class="quick-link">VOLVER A TIC</a>
+					<a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+					<a href="usuarioscreados.html" class="quick-link" aria-current="page">USUARIOS CREADOS</a>
+				</nav>
+			</aside>
+
+			<div class="personal-main">
+				<section class="intro-section">
+					<h1>Usuarios creados</h1>
+					<p>Consulta las cuentas registradas y exporta el directorio cuando lo necesites.</p>
+				</section>
+
+				<section class="usuarios-section" aria-labelledby="usuarios-titulo">
+					<div class="usuarios-section-heading">
+						<h2 id="usuarios-titulo">Directorio de usuarios</h2>
+						<div class="usuarios-export-actions">
+							<button class="btn" type="button" onclick="exportarUsuariosPDF()">Exportar PDF</button>
+							<button class="btn" type="button" onclick="exportarUsuariosExcel()">Exportar Excel</button>
+						</div>
+					</div>
+					<div id="usuarios-lista" class="usuarios-lista" aria-live="polite"></div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
+		</footer>
+	</div>
+</body>
+</html>

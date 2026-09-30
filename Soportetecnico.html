@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGE | Soporte técnico</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="areapersonal.html" class="brand"><h1>SIGE</h1></a>
+			<nav>
+				<ul>
+					<li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-content personal-layout">
+			<aside class="quick-links-panel">
+				<h2 class="quick-links-title">Opciones de TIC</h2>
+				<nav class="quick-links" aria-label="Opciones de TIC">
+					<a href="areapersonal.html" class="quick-link">ÁREA PERSONAL</a>
+					<a href="tic.html" class="quick-link">VOLVER A TIC</a>
+					<a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+					<a href="Soportetecnico.html" class="quick-link" aria-current="page">SOPORTE TÉCNICO</a>
+					<a href="equiposeinventario.html" class="quick-link">EQUIPOS E INVENTARIO</a>
+					<a href="redeseinfraestructura.html" class="quick-link">REDES E INFRAESTRUCTURA</a>
+					<a href="softwareeaplicaciones.html" class="quick-link">SOFTWARE Y APLICACIONES</a>
+					<a href="seguridadinformatica.html" class="quick-link">SEGURIDAD INFORMÁTICA</a>
+				</nav>
+			</aside>
+
+			<div class="personal-main">
+				<section class="intro-section tic-detail-intro">
+					<h1>Soporte técnico</h1>
+				</section>
+
+				<section class="tic-management-section" aria-labelledby="support-management-title">
+					<div class="tic-management-heading">
+						<div>
+							<h2 id="support-management-title">Incidentes de soporte</h2>
+						</div>
+					</div>
+
+					<form class="tic-manage-form" data-tic-record-form data-tic-module="soporte" data-tic-title-field="titulo">
+						<div class="tic-manage-grid">
+							<div class="tic-manage-field">
+								<label for="support-title">Asunto del incidente</label>
+								<input id="support-title" name="titulo" data-record-field data-record-label="Asunto" type="text" required>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-requester">Solicitante</label>
+								<input id="support-requester" name="solicitante" data-record-field data-record-label="Solicitante" type="text" required>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-area">Área</label>
+								<input id="support-area" name="area" data-record-field data-record-label="Área" type="text" required>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-category">Tipo de incidencia</label>
+								<select id="support-category" name="categoria" data-record-field data-record-label="Tipo" required>
+									<option value="">Selecciona una opción</option>
+									<option>Hardware</option>
+									<option>Software</option>
+									<option>Accesos</option>
+									<option>Conectividad</option>
+									<option>Otro</option>
+								</select>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-priority">Prioridad</label>
+								<select id="support-priority" name="prioridad" data-record-field data-record-label="Prioridad" required>
+									<option value="">Selecciona prioridad</option>
+									<option>Baja</option>
+									<option>Media</option>
+									<option>Alta</option>
+									<option>Crítica</option>
+								</select>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-impact">Impacto</label>
+								<select id="support-impact" name="impacto" data-record-field data-record-label="Impacto" required>
+									<option>Bajo</option>
+									<option>Medio</option>
+									<option>Alto</option>
+								</select>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-status">Estado</label>
+								<select id="support-status" name="estado" data-record-field data-record-label="Estado" required>
+									<option>Pendiente</option>
+									<option>En proceso</option>
+									<option>Resuelto</option>
+									<option>Cerrado</option>
+								</select>
+							</div>
+							<div class="tic-manage-field">
+								<label for="support-assignee">Responsable asignado</label>
+								<input id="support-assignee" name="responsable" data-record-field data-record-label="Responsable asignado" type="text">
+							</div>
+							<div class="tic-manage-field tic-manage-field-full">
+								<label for="support-equipment">Equipo o servicio afectado</label>
+								<input id="support-equipment" name="recurso" data-record-field data-record-label="Equipo o servicio" type="text">
+							</div>
+							<div class="tic-manage-field tic-manage-field-full">
+								<label for="support-description">Descripción y acciones realizadas</label>
+								<textarea id="support-description" name="descripcion" data-record-field data-record-label="Descripción" rows="4" required></textarea>
+							</div>
+							<div class="tic-manage-field tic-manage-field-full">
+								<label for="support-resolution">Diagnóstico y solución</label>
+								<textarea id="support-resolution" name="solucion" data-record-field data-record-label="Diagnóstico y solución" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="tic-manage-actions">
+							<button class="btn" type="submit" data-tic-save>Guardar incidente</button>
+							<button class="tic-secondary-button" type="button" data-tic-cancel hidden>Cancelar edición</button>
+						</div>
+					</form>
+
+					<div class="tic-records-heading">
+						<h3>Incidentes registrados</h3>
+						<div class="tic-record-filters">
+							<input type="search" data-tic-search placeholder="Buscar incidente" aria-label="Buscar incidente">
+							<select data-tic-filter aria-label="Filtrar incidentes por estado">
+								<option value="">Todos los estados</option>
+								<option>Pendiente</option>
+								<option>En proceso</option>
+								<option>Resuelto</option>
+								<option>Cerrado</option>
+							</select>
+						</div>
+					</div>
+					<div class="tic-record-list" data-tic-record-list aria-live="polite"></div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
+		</footer>
+	</div>
+</body>
+</html>

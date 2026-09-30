@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGE | Redes e infraestructura</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="areapersonal.html" class="brand"><h1>SIGE</h1></a>
+			<nav><ul><li><button class="btn" type="button" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li></ul></nav>
+		</header>
+		<main class="main-content personal-layout">
+			<aside class="quick-links-panel">
+				<h2 class="quick-links-title">Opciones de TIC</h2>
+				<nav class="quick-links" aria-label="Opciones de TIC">
+					<a href="areapersonal.html" class="quick-link">ÁREA PERSONAL</a>
+					<a href="tic.html" class="quick-link">VOLVER A TIC</a>
+					<a href="creacion_usuarios.html" class="quick-link">CREACIÓN DE USUARIOS</a>
+					<a href="Soportetecnico.html" class="quick-link">SOPORTE TÉCNICO</a>
+					<a href="equiposeinventario.html" class="quick-link">EQUIPOS E INVENTARIO</a>
+					<a href="redeseinfraestructura.html" class="quick-link" aria-current="page">REDES E INFRAESTRUCTURA</a>
+					<a href="softwareeaplicaciones.html" class="quick-link">SOFTWARE Y APLICACIONES</a>
+					<a href="seguridadinformatica.html" class="quick-link">SEGURIDAD INFORMÁTICA</a>
+				</nav>
+			</aside>
+			<div class="personal-main">
+				<section class="intro-section tic-detail-intro">
+					<h1>Redes e infraestructura</h1>
+				</section>
+
+				<section class="tic-management-section" aria-labelledby="network-management-title">
+					<div class="tic-management-heading">
+						<div><h2 id="network-management-title">Redes e infraestructura</h2></div>
+					</div>
+					<form class="tic-manage-form" data-tic-record-form data-tic-module="redes" data-tic-title-field="nombre">
+						<div class="tic-manage-grid">
+							<div class="tic-manage-field"><label for="network-name">Servicio o dispositivo</label><input id="network-name" name="nombre" data-record-field data-record-label="Servicio o dispositivo" required></div>
+							<div class="tic-manage-field"><label for="network-type">Tipo</label><select id="network-type" name="tipo" data-record-field data-record-label="Tipo" required><option value="">Selecciona</option><option>Enrutador</option><option>Conmutador</option><option>Punto de acceso</option><option>Enlace a internet</option><option>Servidor</option><option>Otro</option></select></div>
+							<div class="tic-manage-field"><label for="network-location">Sede o ubicación</label><input id="network-location" name="ubicacion" data-record-field data-record-label="Ubicación" required></div>
+							<div class="tic-manage-field"><label for="network-ip">Dirección IP o identificador</label><input id="network-ip" name="direccion" data-record-field data-record-label="IP o identificador"></div>
+							<div class="tic-manage-field"><label for="network-segment">Segmento o red</label><input id="network-segment" name="segmento" data-record-field data-record-label="Segmento"></div>
+							<div class="tic-manage-field"><label for="network-bandwidth">Capacidad o velocidad</label><input id="network-bandwidth" name="capacidad" data-record-field data-record-label="Capacidad"></div>
+							<div class="tic-manage-field"><label for="network-owner">Responsable</label><input id="network-owner" name="responsable" data-record-field data-record-label="Responsable"></div>
+							<div class="tic-manage-field"><label for="network-status">Estado</label><select id="network-status" name="estado" data-record-field data-record-label="Estado" required><option>Operativo</option><option>En mantenimiento</option><option>Incidente</option><option>Fuera de servicio</option></select></div>
+							<div class="tic-manage-field"><label for="network-review">Última revisión</label><input id="network-review" name="ultimaRevision" data-record-field data-record-label="Última revisión" type="date"></div>
+							<div class="tic-manage-field tic-manage-field-full"><label for="network-notes">Notas técnicas y cambios</label><textarea id="network-notes" name="notas" data-record-field data-record-label="Notas" rows="3"></textarea></div>
+						</div>
+						<div class="tic-manage-actions"><button class="btn" type="submit" data-tic-save>Guardar servicio</button><button class="tic-secondary-button" type="button" data-tic-cancel hidden>Cancelar edición</button></div>
+					</form>
+					<div class="tic-records-heading">
+						<h3>Servicios registrados</h3>
+						<div class="tic-record-filters"><input type="search" data-tic-search placeholder="Buscar servicio" aria-label="Buscar servicio"><select data-tic-filter aria-label="Filtrar servicios por estado"><option value="">Todos los estados</option><option>Operativo</option><option>En mantenimiento</option><option>Incidente</option><option>Fuera de servicio</option></select></div>
+					</div>
+					<div class="tic-record-list" data-tic-record-list aria-live="polite"></div>
+				</section>
+			</div>
+		</main>
+		<footer><p>&copy; 2026 SIGE. Todos los derechos reservados.</p></footer>
+	</div>
+</body>
+</html>
