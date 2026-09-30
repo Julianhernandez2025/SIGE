@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-      <script src="script.js"></script>
-          <title>SIGE</title>
-        <body>
+    <title>SIGE | Planes</title>
 </head>
-<div class="container">
-<header>
-    <a href="index.html"><h1>SIGE</h1></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
-            <li><a href="contacto.html">CONTACTANOS</a></li>
-            <li><button class="btn" onclick="window.location.href='login.html'">Iniciar sesión</button></li>
-        </ul>
-    </nav>
-</header>
-</div>
-      <div class="hero">
-        <h1>Optimiza tu gestión empresarial con nuestra plataforma integral.</h1>
-    </div>
-    <div class="features">
-        <div class="feature">
-            <h2>Gestión de Procesos</h2>
-            <p>Optimiza tus procesos empresariales con nuestras herramientas avanzadas.</p>
-        </div>
-        <div class="feature">
-            <h2>Control Financiero</h2>
-            <p>Lleva un control preciso de tus finanzas y toma decisiones informadas.</p>
-        </div>
-        <div class="feature">
-            <h2>Reportes Personalizados</h2>
-            <p>Genera reportes detallados y personalizados para evaluar el rendimiento de tu empresa.</p>
-        </div>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><h1>SIGE</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTANOS</a></li>
+                    <li><button class="btn" onclick="window.location.href='login.html'">Iniciar sesión</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="plans-main">
+            <section class="plans-intro">
+                <p class="plans-eyebrow">SIGE PARA TU EMPRESA</p>
+                <h2>Planes que se adaptan a tu forma de trabajar</h2>
+                <p>Elige el alcance que mejor acompaña a tu equipo. Podemos ajustar cada propuesta a las áreas y procesos de tu empresa.</p>
+            </section>
+
+            <section class="plans-grid" aria-label="Planes sugeridos de SIGE">
+                    <article class="plan-card plan-card-featured">
+                    <p class="plan-level">Para crecer</p>
+                    <h3>Profesional</h3>
+                    <p class="plan-description">Conecta más áreas y mejora el seguimiento de tus procesos.</p>
+                    <ul>
+                        <li>Todo lo incluido en Inicial</li>
+                        <li>Gestión de recursos humanos y contratos</li>
+                        <li>Seguimiento de inventario y procesos</li>
+                        <li>Reportes para apoyar decisiones</li>
+                    </ul>
+                    <p class="plan-price">Cotización según las necesidades de tu empresa</p>
+                    <a class="plan-action" href="contacto.html">Consultar plan</a>
+                </article>
+
+                <article class="plan-card">
+                    <p class="plan-level">Para integrar</p>
+                    <h3>Empresarial</h3>
+                    <p class="plan-description">Una propuesta integral para coordinar las áreas clave de tu empresa.</p>
+                    <ul>
+                        <li>Todo lo incluido en Profesional</li>
+                        <li>Acceso a las áreas de SIGE según tu operación</li>
+                        <li>Configuración inicial de procesos</li>
+                        <li>Acompañamiento para definir el alcance</li>
+                    </ul>
+                    <p class="plan-price">Cotización personalizada</p>
+                    <a class="plan-action" href="contacto.html">Consultar plan</a>
+                </article>
+            </section>
+        </main>
 
         <footer>
             <p>&copy; 2026 SIGE. Todos los derechos reservados.</p>

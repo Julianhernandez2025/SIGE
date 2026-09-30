@@ -3,40 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPRAS</title>
+    <title>SIGE</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
-     <div class="container">
+    <div class="container">
         <header>
             <a href="index.html"><h1>SIGE</h1></a>
             <nav>
                 <ul>
-                    <li><a href="areapersonal.html">INICIO</a></li>
-                        <li><a href="ventasymarketing.html">VENTAS Y MARKETING</a></li>
-                    <li><a href="recursoshumanos.html">RECURSOS HUMANOS</a></li>
-                    <li><a href="tic.html">TIC</a></li>
-                    <li><button class="btn" onclick="window.location.href='login.html'">CERRAR SESIÓN</button></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTANOS</a></li>
+                    <li><button class="btn" onclick="window.location.href='login.html'">Iniciar sesión</button></li>
                 </ul>
             </nav>
         </header>
+        <form action="enviar_contacto.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+              <label for="empresa">Selecciona lo que eres:</label>
+            <select id="empresa" name="empresa" required>
+                <option value="seleccionar">Seleccionar...</option>
+                <option value="empresa1">Empresa</option>
+                <option value="empresa2">Persona Natural</option>
+                <option value="empresa3">Otra</option>
+                </select>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+             <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+           
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="seleccionar">Seleccionar...</option>
+                <option value="informacion">Información</option>
+                <option value="comentario">Comentario</option>
+                <option value="queja">Queja</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <li><a href="index.html"><button type="submit">Enviar</button></a></li>
+        </form>
+
+        <footer>
+            <p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
+        </footer>
     </div>
-<form action="enviar_contacto.php" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" required></textarea>
-
-    <li><a href="index.html"><button type="submit">Enviar</button></a></li>
-</form>
-
-     <footer>
-        <p>&copy; 2026 SIGE. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
